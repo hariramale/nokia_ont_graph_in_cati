@@ -1,0 +1,31 @@
+2019-09-30
+Version 1.2.4
+centos 7
+
+# Create graph using script as data input
+1 create script with output format "string:value" note the ":"
+text:number  ---> remember the format
+download:23232 upload:24335
+
+
+The script should be saved in /usr/share/cacti/scripts file permission should be like
+-rwxr-xr-x 1 apache apache   test.py
+the permission for others can be removed
+
+2 create data input methods
+  2.1 add output fields - it must match the outout field name of script eg. if output is --- download:2341 upload:34321
+
+then data output field will be "download" and "upload" outof context example
+
+3 add data template
+  3.1 add data source item
+    the data source items should be match the output filed names
+
+4 create graph template
+   4.1 add graph template items
+
+5 add device to graph from ...
+
+   Graphs will be populated after 10 or 15 minutes as you configured
+
+     
